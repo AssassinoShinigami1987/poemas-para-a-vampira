@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poemas para a Gata Preta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="cabecalho">
+    <div class="perfil">
+      <span id="nome-namorada">Nati</span>
+      <span id="mensagem-fixa">Gatos pretos não dão azar, mas senão tomar cuidado você se apaixona por eles</span>
+    </div>
+    <div class="controles-header">
+      <button id="abrir-seletor" title="Selecionar poema" aria-label="Selecionar poema">📚</button>
+      <button id="modo-noturno" title="Ativar modo noturno" aria-label="Ativar modo noturno">🌙</button>
+    </div>
+  </header>
+  <main>
+    <div id="poema-card-container">
+      <div id="poema-card">
+        <h2 class="titulo-poema"></h2>
+        <div class="texto-poema"></div>
+      </div>
+      <div class="controles-card">
+        <button id="anterior" title="Verso anterior" aria-label="Verso anterior">⟨</button>
+        <span id="contador-versos">Verso 1 de 1</span>
+        <button id="proximo" title="Próximo verso" aria-label="Próximo verso">⟩</button>
+      </div>
+    </div>
+  </main>
+  <div id="modal-noturno" class="modal" aria-hidden="true">
+    <div class="modal-conteudo">
+      <p>Modo leitura noturna ativado!</p>
+      <button id="fechar-modal">Fechar</button>
+    </div>
+  </div>
+  <div id="modal-seletor" class="modal" aria-hidden="true">
+    <div class="modal-conteudo seletor-conteudo">
+      <h3>Selecione um Poema</h3>
+      <div class="lista-poemas"></div>
+      <button id="fechar-seletor">Fechar</button>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html> 
